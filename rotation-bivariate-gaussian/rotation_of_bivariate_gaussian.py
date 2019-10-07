@@ -56,7 +56,7 @@ invRotationMat = np.linalg.inv(rotationMat)
 
 # Eigen Decomposition Foumula to find new covariance matrix
 newCoverMat = np.dot(rotationMat, np.dot(covarMat, invRotationMat))
-newCoverInv = -(newCoverMat)
+newCoverInv = -newCoverMat
 
 # -------------------------------------- Step : 4 -------------------------------------- #
 # Generate values
